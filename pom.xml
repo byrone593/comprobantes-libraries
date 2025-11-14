@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.byrone593</groupId>
+  <artifactId>comprobantes-libraries</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <name>comprobantes-libraries</name>
+  <description>Comprobantes Java libraries packaged for JitPack</description>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>libs</directory>
+        <includes>
+          <include>**/*.jar</include>
+        </includes>
+      </resource>
+    </resources>
+
+    <plugins>
+      <!-- Empaqueta todos los .jar dentro de uno solo -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.3.0</version>
+        <configuration>
+          <classesDirectory>${basedir}/libs</classesDirectory>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
