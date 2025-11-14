@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Grupo base para JitPack -->
-    <groupId>com.github.byronescobar</groupId>
+    <groupId>com.github.byron593</groupId>
     <artifactId>comprobantes-libraries</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
