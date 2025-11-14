@@ -35,7 +35,7 @@
                             <file>${project.basedir}/cliente-ws-offline.jar</file>
 
                             <!-- IMPORTANTE: Cambia estos valores como quieras -->
-                            <groupId>com.github.byrone593.libs</groupId>
+                            <groupId>com.github.byrone593</groupId>
                             <artifactId>cliente-ws-offline</artifactId>
                             <version>1.0.0</version>
                             <packaging>jar</packaging>
