@@ -21,6 +21,12 @@
 		<module>MITyCLibCrypt-1.1.7</module>
 		<module>MITyCLibOCSP-1.1.7</module>
 		<module>MITyCLibPolicy-1.1.7</module>
+		<module>MITyCLibTrust-1.1.7</module>
+		<module>MITyCLibTSA-1.1.7</module>
+		<module>MITyCLibXADES-1.1.7</module>
+		<module>xmlsec-1.4.2-ADSI-1.1</module>
+		<module>javax.mail</module>
+		<module>jss-4.2.5</module>
 		<module>java-sri</module>
         <!-- Agrega más módulos aquí si tienes más .jar -->
     </modules>
