@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.byron593</groupId>
+        <artifactId>comprobantes-libraries</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>MITyCLibOCSP-1.1.7</artifactId>
+    <packaging>jar</packaging>
+
+    <name>MITyCLibOCSP-1.1.7</name>
+
+    <build>
+        <plugins>
+
+            <!-- Convierte el .jar en un artefacto Maven real -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.5.2</version>
+                <executions>
+                    <execution>
+                        <id>install-external-jar</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <configuration>
+                            <file>${project.basedir}/MITyCLibOCSP-1.1.7.jar</file>
+
+                            <!-- IMPORTANTE: Cambia estos valores como quieras -->
+                            <groupId>com.github.byrone593</groupId>
+                            <artifactId>MITyCLibOCSP-1.1.7</artifactId>
+                            <version>1.0.0</version>
+                            <packaging>jar</packaging>
+
+                            <generatePom>true</generatePom>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

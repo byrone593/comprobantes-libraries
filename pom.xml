@@ -17,6 +17,11 @@
     <modules>
         <module>cliente-ws-offline</module>
         <module>MITyCLibAPI-1.1.7</module>
+		<module>MITyCLibCert-1.1.7</module>
+		<module>MITyCLibCrypt-1.1.7</module>
+		<module>MITyCLibOCSP-1.1.7</module>
+		<module>MITyCLibPolicy-1.1.7</module>
+		<module>java-sri</module>
         <!-- Agrega más módulos aquí si tienes más .jar -->
     </modules>
 
